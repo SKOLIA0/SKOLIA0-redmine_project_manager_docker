@@ -3,7 +3,7 @@
 # Ждем, пока база данных станет доступной
 until nc -z db 5432; do
   echo "Waiting for PostgreSQL..."
-  sleep 3
+  sleep 15
 done
 
 echo "PostgreSQL is up - executing command"
